@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() {
+    int total, attended;
+    float percent;
+
+    printf("Enter total classes: ");
+    scanf("%d", &total);
+    printf("Enter classes attended: ");
+    scanf("%d", &attended);
+
+    percent = (attended * 100.0) / total;
+    printf("Attendance = %.2f%%\n", percent);
+
+    if (percent >= 75)
+        printf("Eligible for exam\n");
+    else
+        printf("Not eligible for exam\n");
+
+    return 0;
+}
